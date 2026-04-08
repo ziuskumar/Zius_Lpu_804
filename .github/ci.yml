@@ -1,0 +1,14 @@
+name: First CI Pipeline
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Run Test
+        run: echo "CI is working 🚀"
